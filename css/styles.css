@@ -1,0 +1,142 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Opis tego co powyzej - Standardowym modelem blokowym w nowoczesnych projektach jest border-box aby uniknąć ustawiania ręcznie właściwości box-sizing: border-box;
+w każdym elemencie użyj poniższego kodu CSS na samym początku arkusza stylów. */
+
+body {
+    font-family: "Roboto", sans-serif;
+    color: #212121;
+}
+
+.link {
+    text-decoration: none;
+    font-style: normal;
+}
+
+/* .link:active, */
+.link:hover,
+.link:focus {
+    color: #2196F3;
+}
+
+/* section head and logo*/
+.logo {
+    font-family: "Raleway", sans-serif;
+    color: #2196F3;
+    font-weight: 700;
+    font-size: 1.625em;
+    text-decoration: none;
+}
+.accent1 {
+    color: #000000;
+}
+
+.accent2 {
+    color: #FFFFFF;
+}
+
+.nav-link {
+    color: #212121;
+    font-size: 0.875em;
+    font-weight: 500;
+}
+
+.contact1 {
+    color: #757575;
+    font-size: 0.875em;
+    font-weight: 500;
+}
+
+/* body */
+.part1,
+footer {
+    background-color: #2F303A;
+}
+
+.heading1 {
+    color: #FFFFFF;
+    font-size: 2.75em;
+    font-weight: 900;
+    line-height: 1.363636363636364;
+    text-align: center;
+}
+
+.main-side-button {
+    color: #FFFFFF;
+    background-color: #2196F3;
+    font-weight: bold;
+    line-height: 1.875;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* section 2 service description */
+.article-title {
+    font-size: 0.875em;
+    font-weight: 700;
+}
+
+.article-text {
+    color: #757575;
+    font-size: 0.875em;
+    line-height: 1.714285714285714;
+}
+
+/* section 3 our job */
+.heading2 {
+    font-weight: 700;
+    font-size: 2.25em;
+}
+
+/* section 4 our team */
+.name {
+    font-weight: 500;
+    color: #212121
+}
+
+.job {
+    color: #757575;
+}
+
+/* footer */
+.contact2 {
+    font-size: 0.875em;
+    color: #FFFFFF;
+    line-height: 1.714285714285714;
+}
+
+.contact3 {
+    font-size: 0.875em;
+    color: rgba(255,255,255, 0.6);  /* bialy, 60% przezroczystosci */
+    line-height: 1.714285714285714;
+}
+
+
+
+            /* PORTFOLIO */
+.portfolio-button {
+    background-color: #F5F4FA;
+    cursor: pointer;
+    border-width: 0;
+    line-height: 1.625;
+}
+.portfolio-button:focus,
+.portfolio-button:hover {
+    background-color: #2196F3;
+    color: #FFFFFF;
+}
+
+.product-title {
+    font-weight: bold;
+    font-size: 1.125em;
+    line-height: 2;
+}
+
+.product-type {
+    color: #757575;
+    line-height: 1.875;
+}
