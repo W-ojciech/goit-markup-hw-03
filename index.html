@@ -6,7 +6,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="description" content="Nauka podstaw HTML5 dla początkujących">
     <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
     <!-- Normalizator stylow - powyzszy link. Musi byc dodany przed innymi linkami ze stylami. Ten normalizator domyslnie ustawia globalny border-box wiec moge zostawic go pustym w styles.css -->
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,12 +18,12 @@
 </head>
 
 <body>
-    <!-- NAVIGATION PANEL -->
-    <div class="menu container">
+    <!-- MENU PANEL -->
+    <div class="navigation container">
         <a href="./index.html" class="link logo">
             Web<span class="accent1">Studio</span>
         </a>
-        <nav class="navigation">
+        <nav>
             <ul class="nav-list">
                 <li><a href="#" class="link nav-page">Agencja</a></li>
                 <li><a href="./portfolio.html" class="link nav-page">Portfolio</a></li>
@@ -37,16 +37,31 @@
     </div>
 
     <!-- HEADER -->
-    <header class="header container">
+    <header class="head">
         <h1 class="heading1">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
         <button type="button" class="button">Zamów usługe</button>
     </header>
 
-    <main class="main container">
+    <main>
         <!-- SECTION 1 - LIST OF ARTICLES -->
         <div class="section container">
             <ul class="cards-list">
-                <li class="item">
+                <li class="card">
+                    <p class="article-title">LOREM IPSUM</p>
+                    <p class="article-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu
+                        sem. Sed
+                        non sodales
+                        dui.
+                        Interdum et malesuada</p>
+                    <!-- <li class="card">
+                    <p class="article-title">LOREM IPSUM</p>
+                    <p class="article-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu
+                        sem. Sed
+                        non sodales
+                        dui.
+                        Interdum et malesuada</p> -->
+                </li>
+                <li class="card">
                     <p class="article-title">LOREM IPSUM</p>
                     <p class="article-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu
                         sem. Sed
@@ -54,7 +69,7 @@
                         dui.
                         Interdum et malesuada</p>
                 </li>
-                <li>
+                <li class="card">
                     <p class="article-title">LOREM IPSUM</p>
                     <p class="article-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu
                         sem. Sed
@@ -62,15 +77,7 @@
                         dui.
                         Interdum et malesuada</p>
                 </li>
-                <li>
-                    <p class="article-title">LOREM IPSUM</p>
-                    <p class="article-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu
-                        sem. Sed
-                        non sodales
-                        dui.
-                        Interdum et malesuada</p>
-                </li>
-                <li>
+                <li class="card">
                     <p class="article-title">LOREM IPSUM</p>
                     <p class="article-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu
                         sem. Sed
@@ -83,7 +90,7 @@
 
         <!-- SECTION 2 - ABOUT US -->
         <section class="section container">
-            <h2 class="heading2">Czym się zajmujemy</h2>
+            <h2 class="header2">Czym się zajmujemy</h2>
             <ul class="about-us-list">
                 <li><img src="./images/our-job/programming.jpg" alt="picture of programming" width="370" height="294">
                 </li>
@@ -93,47 +100,60 @@
         </section>
 
         <!-- SECTION 3 - OUR TEAM -->
-        <section class="section container">
-            <h2 class="heading2">Nasz zespół</h2>
-            <ul class="list">
-                <li><img src="./images/our-people/john-doe1.jpg" alt="picture of John Doe" width="270" height="260">
-                    <p><a href="#" class="link name">John Doe</a></p>
+        <section class="section our-team">
+            <h2 class="header2">Nasz zespół</h2>
+            <ul class="our-team-list container">
+                <li class="our-team-card">
+                    <img src="./images/our-people/john-doe1.jpg" alt="picture of John Doe" width="270" height="260">
+                    <p>
+                        <a href="#" class="link name">John Doe</a>
+                    </p>
+                    <p class="job">Product designer</p>
+                </li>
+                <li class="our-team-card">
+                    <img src="./images/our-people/john-doe2.jpg" alt="picture of John Doe" width="270" height="260">
+                    <p>
+                        <a href="#" class="link name">John Doe</a>
+                    </p>
                     <p class="job">Frontend Developer</p>
                 </li>
-                <li><img src="./images/our-people/john-doe2.jpg" alt="picture of John Doe" width="270" height="260">
-                    <p><a href="#" class="link name">John Doe</a></p>
-                    <p class="job">Frontend Developer</p>
-                </li>
-                <li>
+                <li class="our-team-card">
                     <img src="./images/our-people/john-doe3.jpg" alt="picture of John Doe" width="270" height="260">
-                    <p><a href="#" class="link name">John Doe</a></p>
-                    <p class="job">Frontend Developer</p>
+                    <p>
+                        <a href="#" class="link name">John Doe</a>
+                    </p>
+                    <p class="job">Marketing</p>
                 </li>
-                <li><img src="./images/our-people/john-doe4.jpg" alt="picture of John Doe" width="270" height="260">
-                    <p><a href="#" class="link name">John Doe</a></p>
-                    <p class="job">Frontend Developer</p>
+                <li class="our-team-card">
+                    <img src="./images/our-people/john-doe4.jpg" alt="picture of John Doe" width="270" height="260">
+                    <p>
+                        <a href="#" class="link name">John Doe</a>
+                    </p>
+                    <p class="job">UI designer</p>
                 </li>
             </ul>
         </section>
     </main>
 
     <!-- FOOTER -->
-    <footer class="footer container">
-        <a href="./index.html" class="link logo">
-            Web<span class="accent2">Studio</span>
-        </a>
-        <address>
-            <ul class="list">
-                <li>
-                    <a href="https://goo.gl/maps/GoScVA1be1kBNJ3W7" target="_blank" rel="noreferrer noopener"
-                        class="link contact2">
-                        m. Warszawa, Aleje Jerozolimskie 21
-                    </a>
-                </li>
-                <li><a href="mailto:info@example.com" class="link contact3">info@example.com</a></li>
-                <li><a href="tel:+4793921911" class="link contact3">+48 111 111 111</a></li>
-            </ul>
-        </address>
+    <footer class="footer">
+        <div class="container">
+            <a href="./index.html" class="link logo">
+                Web<span class="accent2">Studio</span>
+            </a>
+            <address>
+                <ul>
+                    <li class="contact2">
+                        <a href="https://goo.gl/maps/GoScVA1be1kBNJ3W7" target="_blank" rel="noreferrer noopener"
+                            class="link">
+                            m. Warszawa, Aleje Jerozolimskie 21
+                        </a>
+                    </li>
+                    <li class="contact3"><a href="mailto:info@example.com" class="link">info@example.com</a></li>
+                    <li class="contact3"><a href="tel:+4793921911" class="link">+48 111 111 111</a></li>
+                </ul>
+            </address>
+        </div>
     </footer>
 
 </body>
